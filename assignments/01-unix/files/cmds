@@ -1,0 +1,259 @@
+    1  history > cmds
+    2  cat cmds
+    3  mkdir files
+    4  cd files
+    5  ls
+    6  cd file
+    7  ls
+    8  cat > answers.txt
+    9  script answers.txt
+   10  cd file
+   11  cd files
+   12  mkdir files
+   13  cd files
+   14  ls
+   15  rm files
+   16  rm -r files
+   17  file mkdir
+   18  file files
+   19  pwd
+   20  rm files
+   21  cd file
+   22  rmdir files
+   23  rmdir /home/u26/baishalibarua/files/file/files
+   24  pwd
+   25  rm -r mydir
+   26  rm -r files
+   27  rm files
+   28  rm*
+   29  rm *
+   30  cd file
+   31  pwd
+   32  cd /home/u26/baishalibarua/files
+   33  pwd
+   34  cd /home/u26/baishalibarua/
+   35  ls
+   36  rm ?  baishalibarua  cmds  files  foo  project2  who
+   37  rm -r project2
+   38  ls
+   39  rm -r files
+   40  rm -r \r
+   41  cd /home/u26/baishalibarua/
+   42  ls
+   43  rm -r baishalibarua
+   44  ls
+   45  rm -r /home/u26/baishalibarua/
+   46  pwd
+   47  ls
+   48  rm files
+   49  cd files
+   50  ls
+   51  rm -r file
+   52  cd file
+   53  ls
+   54  cd /home/u26/baishalibarua/files
+   55  ls
+   56  rmdir file
+   57  cd file
+   58  ls
+   59  cd /home/u26/baishalibarua/files
+   60  ls
+   61  rm file
+   62  rm -r file
+   63  cd /home/u26/baishalibarua/
+   64  rm -rf /home/u26/baishalibarua/files/
+   65  q!
+   66  ssh baishalibarua@hpc.arizona.edu
+   67  cd
+   68  cd .ssh
+   69  cat id_rsa.pub
+   70  ssh baishalibarua@hpc.arizona.edu
+   71  cd~/.ssh
+   72  ssh-keygen
+   73  cd~/.ssh
+   74  ssh-keygen
+   75  /home/u26/baishalibarua/.ssh/id_rsa
+   76  cd~/.ssh
+   77  ssh-keygen
+   78  cd~/.ssh
+   79  ssh-keygen
+   80  ssh baishalibarua@hpc.arizona.edu
+   81  mkdir files
+   82  cd files
+   83  ls
+   84  rmdir
+   85  rmdir files
+   86  rm abc
+   87  rmc const.txt
+   88  rm const.txt
+   89  rm files
+   90  rm scralet.txt
+   91  rm usdeclar.txt
+   92  rmdir 
+   93  rmdir files
+   94  rm abc
+   95  rm scralet.txt
+   96  rm const.txt
+   97  rm usdeclar.txt
+   98  rmdir
+   99  rmdir files
+  100  clear
+  101  mkdir file
+  102  cd file
+  103  ls
+  104  curl https://www.constitution.org/usdeclar.txt -o usdeclar.txt
+  105  usdeclar.txt
+  106  cat usdeclar.txt
+  107  curl https://www.usconstitution.net/const.txt -o const.txt
+  108  cat const.txt
+  109  curl https://www.gutenberg.org/files/25344-25344-0.txt -o scarlet.txt
+  110  cat scarlet.txt
+  111  ls
+  112  wc -l usdeclar.txt
+  113  wc -l const.txt
+  114  wc -l scarlet.txt
+  115  rm scarlet.txt
+  116  ls
+  117  curl https://www.gutenberg.org/files/25344/25344-0.txt -o scarlet.txt
+  118  cat scarlet.txt
+  119  wc -l scarlet.txt
+  120  wc -l usdeclar.txt
+  121  wc -l const.txt
+  122  wc -l usdeclar.txt const.txt scarlet.txt
+  123  find . -size +50k
+  124  file const.txt
+  125  cat filname | md5sum > outout.txt
+  126  cat usdeclar.txt const.txt scarlet.txt | md5sum > output.txt
+  127  md5sum usdeclar.txt
+  128  cat usdeclar.txt const.txt scarlet.txt > output
+  129  cat output
+  130  md5sum output
+  131  df
+  132  grep -o judge output | wc -l
+  133  wc -l output
+  134  grep human * -lR
+  135  grep -o scarlet scarlet.txt | wc -w
+  136  head -n15 usdeclar.txt
+  137  head -n15 const.txt
+  138  head -n15 scarlet.txt
+  139  cat head -n15 scarlet.txt > foo1
+  140  cat head -n15 usdeclar.txt >> foo1
+  141  cat head -n15 usdeclar.txt >> a
+  142  cat head -n15 scarlet.txt > foo 1
+  143  head -n15 usdeclar.txt
+  144  cat head -n15 usdeclar.txt head -n15 const.txt head -n15 scarlet.txt > foo 
+  145  cat head -n15 usdeclar.txt head -n15 const.txt head -n15 scarlet.txt > foo.txt
+  146   head -n15 usdeclar.txt head -n15 const.txt head -n15 scarlet.txt 
+  147   head -n15 usdeclar.txt head -n15 const.txt head -n15 scarlet.txt > foo
+  148   head -n15 usdeclar.txt > abc
+  149  head -n15 const.txt > def
+  150  head -n15 scarlet.txt > ghi
+  151  cat abc def ghi > foo
+  152  cat foo
+  153  wc -l foo
+  154  rm foo
+  155  ls
+  156  rm outout.txt
+  157  rm foo.txt
+  158  rm foo1
+  159  ls
+  160  history > cmds
+  161  cmds
+  162  cat cmds
+  163  vi answers.txt
+  164  defence, promote the general Welfare, and secure the Blessings of Liberty to
+  165  ourselves and our Posterity, do ordain and establish this Constitution for the
+  166  United States of America.
+  167  Article 1.
+  168  [baishalibarua@gatekeeper files]$ wc -l foo
+  169  45 foo
+  170  [baishalibarua@gatekeeper files]$ rm foo
+  171  [baishalibarua@gatekeeper files]$ ls
+  172* 
+  173  [baishalibarua@gatekeeper files]$ exit
+  174  exit
+  175  ssh baishalibarua@hpc.arizona.edu
+  176  ssh hpc
+  177  hostname
+  178  ssh login3
+  179  .ssh/config
+  180  cat .ssh/config
+  181  ls
+  182  cd biosys-analytics/
+  183  git pull upstream master
+  184  ls
+  185  git add -A files
+  186  git add -A assignments/
+  187  git commit -m 'all done' assignments/
+  188  git push 
+  189  ls
+  190  cd assignments/
+  191  ls
+  192  cd 01-unix
+  193  ls
+  194  cd files
+  195  ls
+  196  touch answers.txt
+  197  ls
+  198  vi answers.txt 
+  199  cat answers.txt 
+  200  cd ..
+  201  git add -A files
+  202  git commit -m 'all done' files
+  203  git push
+  204  hostname
+  205  pwd
+  206  ls
+  207  git status
+  208  find files/
+  209  cd files/
+  210  ls
+  211  head answers.txt 
+  212  ls file/
+  213  ls 
+  214  ls file/answers.txt 
+  215  mv file/answers.txt .
+  216  cd file/
+  217  ls
+  218  cd biosys-analytics/
+  219  ls
+  220  ls assignments/01-unix
+  221  ls
+  222  cd ../
+  223  ls
+  224  cd ../
+  225  ls
+  226  rm -rf file/
+  227  ls
+  228  pwd
+  229  cd
+  230  ls
+  231  cd biosys-analytics/
+  232  ls
+  233  find . -name *.txt
+  234  cd /rsgrps/bh_class/baishalibarua/
+  235  ls
+  236  cd
+  237  ls
+  238  cd biosys-analytics/
+  239  ls
+  240  less assignments/01-unix/README.md 
+  241  find . -name const.txt
+  242  cd assignments/
+  243  ls
+  244  cd 01-unix
+  245  ls
+  246  less cmds 
+  247  history
+  248  curl https://www.usconstitution.net/const.txt -o const.txt
+  249  ls
+  250  curl https://www.gutenberg.org/files/25344/25344-0.txt -o scarlet.txt
+  251  history | grep curl | grep usdec
+  252  curl https://www.constitution.org/usdeclar.txt 
+  253  wget https://www.constitution.org/usdeclar.txt 
+  254  ls
+  255  mv *.txt files/
+  256  ls
+  257  rm cmds 
+  258  cd files/
+  259  history > cmds
