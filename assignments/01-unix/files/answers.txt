@@ -1,0 +1,233 @@
+[baishalibarua@gatekeeper ~]$ history -c
+[baishalibarua@gatekeeper ~]$ histor > cmds
+-bash: histor: command not found
+[baishalibarua@gatekeeper ~]$ history > cmds
+[baishalibarua@gatekeeper ~]$ cat cmds
+    1  histor > cmds
+    2  history > cmds
+[baishalibarua@gatekeeper ~]$ mkdir files
+mkdir: cannot create directory `files': File exists
+[baishalibarua@gatekeeper ~]$ cd files
+[baishalibarua@gatekeeper files]$ ls
+a  answers.txt  b  c  cmds  const.txt  foo  output  scarlet.txt  usdeclar.txt
+[baishalibarua@gatekeeper files]$ rm a  answers.txt  b  c  cmds  const.txt  foo  output  scarlet.txt  usdeclar.txt
+[baishalibarua@gatekeeper files]$ ls
+[baishalibarua@gatekeeper files]$ cat > answers.txt
+^C
+[baishalibarua@gatekeeper files]$ script answers.txt
+Script started, file is answers.txt
+[baishalibarua@gatekeeper files]$ curl https://www.constitution.org/usdeclar.txt -o usdeclar.txt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  8685    0  8685    0     0  21650      0 --:--:-- --:--:-- --:--:--  180k
+[baishalibarua@gatekeeper files]$ curl https://www.usconstitution.net/const.txt -o const.txt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 45119    0 45119    0     0  91468      0 --:--:-- --:--:-- --:--:--  200k
+[baishalibarua@gatekeeper files]$ curl https://www.gutenberg.org/files/25344/25344-0.txt -o scarlet.txt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  513k  100  513k    0     0   459k      0  0:00:01  0:00:01 --:--:--  775k
+[baishalibarua@gatekeeper files]$ ls
+answers.txt  const.txt  scarlet.txt  usdeclar.txt
+[baishalibarua@gatekeeper files]$ wc -l usdeclar.txt
+176 usdeclar.txt
+[baishalibarua@gatekeeper files]$ wc -l const.txt
+872 const.txt
+[baishalibarua@gatekeeper files]$ wc -l scarlet.txt
+9120 scarlet.txt
+[baishalibarua@gatekeeper files]$ wc -l usdeclar.txt const.txt scarlet.txt
+   176 usdeclar.txt
+   872 const.txt
+  9120 scarlet.txt
+ 10168 total
+[baishalibarua@gatekeeper files]$ find . -size +50k
+./scarlet.txt
+[baishalibarua@gatekeeper files]$ file const.txt
+const.txt: ASCII English text
+[baishalibarua@gatekeeper files]$ cat usdeclar.txt const.txt scarlet.txt > output
+[baishalibarua@gatekeeper files]$ md5sum output
+508904d53926510fea31028319391b79  output
+[baishalibarua@gatekeeper files]$ df
+Filesystem           1K-blocks    Used Available Use% Mounted on
+/dev/mapper/vg_centos6base-lv_root
+                      29086704 2270424  25332096   9% /
+tmpfs                  1962120       0   1962120   0% /dev/shm
+/dev/vda1               487652  170378    291674  37% /boot
+hpc-nfs0-10g.hpc.arizona.edu:/gsfs1/bastionloginstore
+                     209715200 4843520 204871680   3% /home
+[baishalibarua@gatekeeper files]$ grep -o judge output | wc -l
+17
+[baishalibarua@gatekeeper files]$ grep human * -lR
+output
+scarlet.txt
+usdeclar.txt
+[baishalibarua@gatekeeper files]$ grep -o scarlet scarlet.txt | wc -w
+108
+[baishalibarua@gatekeeper files]$ head -n15 scarlet.txt > a
+[baishalibarua@gatekeeper files]$ head -n15 usdeclar.txt > b
+[baishalibarua@gatekeeper files]$ head -n15 const.txt > c
+[baishalibarua@gatekeeper files]$ cat a b c > foo
+[baishalibarua@gatekeeper files]$ cat foo
+?The Project Gutenberg EBook of The Scarlet Letter, by Nathaniel Hawthorne
+
+This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever.  You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with this eBook or online at www.gutenberg.net
+
+
+Title: The Scarlet Letter
+
+Author: Nathaniel Hawthorne
+
+Illustrator: Mary Hallock Foote
+             L. S. Ipsen
+
+                      Declaration of Independence
+
+                   [Adopted in Congress 4 July 1776]
+
+   The Unanimous Declaration of the Thirteen United States of America
+
+When, in the course of human events, it becomes necessary for one people to 
+dissolve the political bands which have connected them with another, and to 
+assume among the powers of the earth, the separate and equal station to 
+which the laws of nature and of nature's God entitle them, a decent respect 
+to the opinions of mankind requires that they should declare the causes 
+which impel them to the separation.
+
+Provided by USConstitution.net
+------------------------------
+
+[Note: Repealed text is not noted in this version.  Spelling errors have been
+corrected in this version.  For an uncorrected, annotated version of the
+Constitution, visit http://www.usconstitution.net/const.html ]
+
+We the People of the United States, in Order to form a more perfect Union,
+establish Justice, insure domestic Tranquility, provide for the common
+defence, promote the general Welfare, and secure the Blessings of Liberty to
+ourselves and our Posterity, do ordain and establish this Constitution for the
+United States of America.
+
+Article 1.
+
+[baishalibarua@gatekeeper files]$ wc -l foo
+45 foo
+[baishalibarua@gatekeeper files]$ rm foo
+[baishalibarua@gatekeeper files]$ ls
+a  answers.txt  b  c  const.txt  output  scarlet.txt  usdeclar.txt
+[baishalibarua@gatekeeper files]$ exit
+exit
+Script done, file is answers.txt
+
+
+Script started on Tue 22 Jan 2019 04:37:30 AM MST
+[baishalibarua@gatekeeper files]$ curl https://www.constitution.org/usdeclar.txt -o usdeclar.txt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  8685    0  8685    0     0  21650      0 --:--:-- --:--:-- --:--:--  180k
+[baishalibarua@gatekeeper files]$ curl https://www.usconstitution.net/const.txt -o const.txt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 45119    0 45119    0     0  91468      0 --:--:-- --:--:-- --:--:--  200k
+[baishalibarua@gatekeeper files]$ curl https://www.gutenberg.org/files/25344/25344-0.txt -o scarlet.txt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  513k  100  513k    0     0   459k      0  0:00:01  0:00:01 --:--:--  775k
+[baishalibarua@gatekeeper files]$ ls
+answers.txt  const.txt  scarlet.txt  usdeclar.txt
+[baishalibarua@gatekeeper files]$ wc -l usdeclar.txt
+176 usdeclar.txt
+[baishalibarua@gatekeeper files]$ wc -l const.txt
+872 const.txt
+[baishalibarua@gatekeeper files]$ wc -l scarlet.txt
+9120 scarlet.txt
+[baishalibarua@gatekeeper files]$ wc -l usdeclar.txt const.txt scarlet.txt
+   176 usdeclar.txt
+   872 const.txt
+  9120 scarlet.txt
+ 10168 total
+[baishalibarua@gatekeeper files]$ find . -size +50k
+./scarlet.txt
+[baishalibarua@gatekeeper files]$ file const.txt
+const.txt: ASCII English text
+[baishalibarua@gatekeeper files]$ cat usdeclar.txt const.txt scarlet.txt > output
+[baishalibarua@gatekeeper files]$ md5sum output
+508904d53926510fea31028319391b79  output
+[baishalibarua@gatekeeper files]$ df
+Filesystem           1K-blocks    Used Available Use% Mounted on
+/dev/mapper/vg_centos6base-lv_root
+                      29086704 2270424  25332096   9% /
+tmpfs                  1962120       0   1962120   0% /dev/shm
+/dev/vda1               487652  170378    291674  37% /boot
+hpc-nfs0-10g.hpc.arizona.edu:/gsfs1/bastionloginstore
+                     209715200 4843520 204871680   3% /home
+[baishalibarua@gatekeeper files]$ grep -o judge output | wc -l
+17
+[baishalibarua@gatekeeper files]$ grep human * -lR
+output
+scarlet.txt
+usdeclar.txt
+[baishalibarua@gatekeeper files]$ grep -o scarlet scarlet.txt | wc -w
+108
+[baishalibarua@gatekeeper files]$ head -n15 scarlet.txt > a
+[baishalibarua@gatekeeper files]$ head -n15 usdeclar.txt > b
+[baishalibarua@gatekeeper files]$ head -n15 const.txt > c
+[baishalibarua@gatekeeper files]$ cat a b c > foo
+[baishalibarua@gatekeeper files]$ cat foo
+?The Project Gutenberg EBook of The Scarlet Letter, by Nathaniel Hawthorne
+
+This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever.  You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with this eBook or online at www.gutenberg.net
+
+
+Title: The Scarlet Letter
+
+Author: Nathaniel Hawthorne
+
+Illustrator: Mary Hallock Foote
+             L. S. Ipsen
+
+                      Declaration of Independence
+
+                   [Adopted in Congress 4 July 1776]
+
+
+
+   The Unanimous Declaration of the Thirteen United States of America
+
+When, in the course of human events, it becomes necessary for one people to 
+dissolve the political bands which have connected them with another, and to 
+assume among the powers of the earth, the separate and equal station to 
+which the laws of nature and of nature's God entitle them, a decent respect 
+to the opinions of mankind requires that they should declare the causes 
+which impel them to the separation.
+
+Provided by USConstitution.net
+------------------------------
+
+[Note: Repealed text is not noted in this version.  Spelling errors have been
+corrected in this version.  For an uncorrected, annotated version of the
+Constitution, visit http://www.usconstitution.net/const.html ]
+
+We the People of the United States, in Order to form a more perfect Union,
+establish Justice, insure domestic Tranquility, provide for the common
+defence, promote the general Welfare, and secure the Blessings of Liberty to
+ourselves and our Posterity, do ordain and establish this Constitution for the
+United States of America.
+
+Article 1.
+
+[baishalibarua@gatekeeper files]$ wc -l foo
+45 foo
+[baishalibarua@gatekeeper files]$ rm foo
+[baishalibarua@gatekeeper files]$ ls
+a  answers.txt  b  c  const.txt  output  scarlet.txt  usdeclar.txt
+[baishalibarua@gatekeeper files]$ exit
+exit
+
+Script done on Tue 22 Jan 2019 04:38:48 AM MST
+[baishalibarua@gatekeeper files]$ 
