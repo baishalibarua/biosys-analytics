@@ -1,0 +1,62 @@
+Baishali Barua@DESKTOP-LJ2OMT0 MINGW64 ~/code/biosys-analytics/assignments/01-unix-grad/files (master)
+$  grep -Eoi '\<c*|\<s*' *.txt | wc -w
+11449
+
+Baishali Barua@DESKTOP-LJ2OMT0 MINGW64 ~/code/biosys-analytics/assignments/01-unix-grad/files (master)
+$ grep -Ec 'Article [[:digit:]]' const.txt
+7
+
+Baishali Barua@DESKTOP-LJ2OMT0 MINGW64 ~/code/biosys-analytics/assignments/01-unix-grad/files (master)
+$  grep -Ec 'Article [[:digit:]]' usdeclar.txt
+0
+
+Baishali Barua@DESKTOP-LJ2OMT0 MINGW64 ~/code/biosys-analytics/assignments/01-unix-grad/files (master)
+$ grep -Ec 'Article [[:digit:]]' scarlet.txt
+0
+
+Baishali Barua@DESKTOP-LJ2OMT0 MINGW64 ~/code/biosys-analytics/assignments/01-unix-grad/files (master)
+$ grep -cx '\s*' const.txt
+169
+
+Baishali Barua@DESKTOP-LJ2OMT0 MINGW64 ~/code/biosys-analytics/assignments/01-unix-grad/files (master)
+$ 169
+bash: 169: command not found
+
+Baishali Barua@DESKTOP-LJ2OMT0 MINGW64 ~/code/biosys-analytics/assignments/01-unix-grad/files (master)
+$ grep -c '^[aeiou]' scarlet.txt
+1618
+
+Baishali Barua@DESKTOP-LJ2OMT0 MINGW64 ~/code/biosys-analytics/assignments/01-unix-grad/files (master)
+$ vowels=(a e i o u A E I O U)
+
+Baishali Barua@DESKTOP-LJ2OMT0 MINGW64 ~/code/biosys-analytics/assignments/01-unix-grad/files (master)
+$  for i in ${vowels[@]};do foo=`grep -c ^$i scarlet.txt`; echo    $i      $foo ; done
+a 633
+e 199
+i 348
+o 358
+u 80
+A 59
+E 10
+I 88
+O 20
+U 6
+
+Baishali Barua@DESKTOP-LJ2OMT0 MINGW64 ~/code/biosys-analytics/assignments/01-unix-grad/files (master)
+$  for i in ${vowels[@]};do foo=`grep -c ^$i scarlet.txt`; echo $i  $foo ; done
+a 633
+e 199
+i 348
+o 358
+u 80
+A 59
+E 10
+I 88
+O 20
+U 6
+
+Baishali Barua@DESKTOP-LJ2OMT0 MINGW64 ~/code/biosys-analytics/assignments/01-unix-grad/files (master)
+$ history > cmds
+
+Baishali Barua@DESKTOP-LJ2OMT0 MINGW64 ~/code/biosys-analytics/assignments/01-unix-grad/files (master)
+$

@@ -1,0 +1,403 @@
+    1  ssh baishalibarua@hpc.arizona.edu
+    2  ssh baishalibarua@hpc.arizona.edu
+    3  cmds
+    4  history
+    5  pwd
+    6  cd
+    7  cd ..
+    8  ls
+    9  cd files
+   10  git add files
+   11  git pull upstream master
+   12  pwd
+   13  find answers.txt
+   14  ls
+   15  git init
+   16  git add . 
+   17  git clone git@github.com:baishalibarua/biosys-analytics.git
+   18  cd biosys-analytics/
+   19  git clone https://github.com:baishalibarua/biosys-analytics.git
+   20  git clone https://github.com:baishalibarua/biosys-analytics
+   21  git clone  git@github.com:baishalibarua/biosys-analytics
+   22  git clone  git@github.com:baishalibarua/biosys-analytics.git
+   23  git clone  git@github.com:baishalibarua/biosys-analytics.git/
+   24  git clone  git@github.com:baishalibarua/biosys-analytics/
+   25  git clone git@github.com:baishalibarua/biosys-analytics.git
+   26  sudo chmod 777 DIR_NAME
+   27  cd DIR_NAME
+   28  git clone git@github.com:baishalibarua/biosys-analytics.git
+   29  sudo chown -R baishalibarua /var/www
+   30  sudo chown -R **baishalibarua** /var/www
+   31  sudo chown -R baishalibarua.www-data /var/www
+   32  whoami
+   33  who
+   34  hello cowsay
+   35  "HELLO" cowsay
+   36  cowsay "HELLO"
+   37  echo hi
+   38  cmds
+   39  cat cmds
+   40  history > cmds
+   41  cat cmds
+   42  cat history
+   43  history
+   44  cd files
+   45  git clone git@github.com:baishalibarua/biosys-analytics.git
+   46  cd ~/
+   47  mkdir code
+   48  cd code
+   49  git clone git@github.com:baishalibarua/biosys-analytics.git
+   50  cd files
+   51  cd code
+   52  git clone git@github.com:baishalibarua/biosys-analytics.git
+   53  ssh baishalibarua@hpc.arizona.edu
+   54  git clone git@github.com:baishalibarua/biosys-analytics.git
+   55  pwd
+   56  git clone https://github.com/baishalibarua/biosys-analytics.git
+   57  git status
+   58  cd biosys-analytics/
+   59  git status
+   60  git add *
+   61  git commit -m "all done"
+   62  git config --global user.email "baishalibarua@email.arizona.edu"
+   63  git commit -m "all done"
+   64  git push
+   65  git push
+   66  git biosys-analytics/
+   67  cd biosys-analytics/
+   68  curl https://www.gutenberg.org/files/25344/25344-0.txt -o scarlet.txt
+   69  curl https://www.gutenberg.org/files/25344/25344-0.txt -o scarlet.txt
+   70  curl https://www.gutenberg.org/files/25344/25344-0.txt -o scarlet.txt
+   71  alias c='grep -c '^[e]' scarlet.txt'
+   72  $c
+   73  $count
+   74  alias bijoy='grep -c '^[e]' scarlet.txt'
+   75  $bijoy
+   76  cd files
+   77  pwd
+   78  mkdir files
+   79  rmdir files
+   80  pwd
+   81  cd /C/Users/Baishali Barua/code/biosys-analytics/assignments/01-unix-grad
+   82  pwd
+   83  cd C:/Users/Baishali Barua/code/biosys-analytics/assignments/01-unix-grad/
+   84  cd /c/Users/Baishali Barua/code/biosys-analytics/assignments/01-unix-grad/
+   85  cd /c/Users/Baishali Barua/code/biosys-analytics/
+   86  cd /c/Users/Baishali Barua/
+   87  cd C:\Users\Baishali Barua\code\biosys-analytics\assignments\01-unix-grad
+   88  cd "C:\Users\Baishali Barua\code\biosys-analytics\assignments\01-unix-grad"
+   89  pwd
+   90  mkdir files
+   91  cd files
+   92  ls
+   93  pwd
+   94  cd files
+   95  ls
+   96  cat > output.txt
+   97  abcd > output.txt
+   98  "abcd" > output.txt
+   99  "abcd" < output.txt
+  100  cd code
+  101  ls
+  102  cd assignments
+  103  pwd
+  104  ls
+  105  cd ./biosys-analytics/files
+  106  /
+  107  cd
+  108  $PATH
+  109  PATH
+  110  la -a
+  111  ls -a
+  112  echo "export PATH=/rsgrps/bh_class/conda/bin:/rsgrps/bh_class/bin:$PATH" >> ~/.bashrc
+  113  pwd
+  114  echo $PATH
+  115   grep -n ^[aeiouAEIOU] scarlet.txt
+  116  mkdir
+  117  mkdir files
+  118  cd files
+  119  ls
+  120  pwd
+  121  curl https://www.constitution.org/usdeclar.txt -o usdeclar.txt
+  122  curl https://www.usconstitution.net/const.txt -o const.txt
+  123  curl https://www.gutenberg.org/files/25344/25344-0.txt -o scarlet.txt
+  124  grep -Eoi '\<c*|\<s*' *.txt | wc -l
+  125  find . -type f -name  's*' -o -name 'c*' 
+  126  grep -Ec 'Article [[:digit:]]' const.txt
+  127  grep -cx '\s*' const.txt
+  128  grep -Eoi 'scarlet' scarlet.txt | wc -l
+  129  grep -oni '^[aeiou]' scarlet.txt
+  130  grep -c '^[aeiou]' scarlet.txt
+  131  grep -c '^[a] [e] [i] [o] [u]' scarlet.txt
+  132  grep -c '^[a], [e], [i], [o], [u]' scarlet.txt
+  133  grep -c '^[a]' scarlet.txt
+  134  grep -c '[a]' scarlet.txt
+  135  grep -w '^[a]' scarlet.txt
+  136  grep -c '^[A]' scarlet.txt
+  137  grep -c '^[A]' '^[E]' '^[I]' scarlet.txt
+  138  grep -c '^[AEI]' scarlet.txt
+  139  grep -c '^[A][E][I]' scarlet.txt
+  140  echo tr '''\n'|sort -f| sed -nr 's/^([aeiou]).*/\U\1\Ip' scarlet.txt
+  141  echo | tr '''\n'| sort -f | sed -nr 's/^([aeiou]).*/\U\1\Ip' scarlet.txt
+  142  echo | tr '''\n'| sort -f | sed -nr 's/^([aeiou]).*/\U\1\Ip' scarlet.txt
+  143  grep -Eow '^[aeiou'] scarlet.txt
+  144  grep -oni '^[aeiou'] scarlet.txt
+  145  grep -c '^[aeiou'] scarlet.txt
+  146  grep -c '^[aeiou]' scarlet.txt
+  147  grep -c '^[a e i o u]' scarlet.txt
+  148  grep -c '^[a] [e] [i] [o] [u]' scarlet.txt
+  149  grep -c '^[a][e][i][o][u]' scarlet.txt
+  150  grep -c '[aeiou]' scarlet.txt
+  151  grep -c '^[aeiou]*' scarlet.txt
+  152  grep -c '^[aeiou]*' scarlet.txt | wc -l
+  153  grep '^[aeiou]*' scarlet.txt | wc -l
+  154  grep '^[aeiou]' scarlet.txt | wc -l
+  155  grep '^[aeiou]' scarlet.txt | sort | uniq | wc -l
+  156  grep '^[a]' scarlet.txt | sort | uniq | wc -l
+  157  grep '^[a]' '^[e]' scarlet.txt | sort | uniq | wc -l
+  158  grep -Ewcv '^[aeiou]' scarlet.txt 
+  159  grep -Ewcv *"[aeiou]*" scarlet.txt 
+  160  grep -Ewcv "*[aeiou]*" scarlet.txt 
+  161  grep -c '^[a,e,i,o,u]*' scarlet.txt
+  162  grep -c '^([^a]*|[^e]*) scarlet.txt
+  163  grep -c '^([^a]*|[^e]*)$' scarlet.txt
+  164  grep -c '^[a] scarlet.txt 
+  165  grep -c '^[e]' scarlet.txt 
+  166  grep -c '^[a] scarlet.txt 
+  167  grep -c ^[e]' scarlet.txt 
+  168  grep -c '^[a] ^[e]' scarlet.txt 
+  169  grep -l '^[a]' scarlet.txt
+  170  grep wc -l '^[a]' scarlet.txt
+  171  grep -c '^[a]' scarlet.txt
+  172  grep -c '^[U]' scarlet.txt
+  173  grep -c '^[O]' scarlet.txt
+  174  grep -c '^[a-e-i-o-u]' scarlet.txt
+  175  grep -c '^[aeiou]' scarlet.txt
+  176  grep -c '^[a]' | '^[e] scarlet.txt
+  177  grep -c '^[a]' | '^[e]' scarlet.txt
+  178  grep -c '^[a/e/i/o/u]' scarlet.txt
+  179  grep -c '^[a/e/i/o/u]' scarlet.txt
+  180  grep -c '^[a e i o u]' scarlet.txt
+  181  grep -c '^[aeiou]' scarlet.txt
+  182  grep -c '^[a]' scarlet.txt
+  183  grep -c '^[aeiou]*' scarlet.txt
+  184  grep -v '^[aeiou]*' scarlet.txt
+  185  grep -v '^[aeiou]' scarlet.txt
+  186  grep -c '^[aeiou]*' scarlet.txt
+  187  grep -c '^[aeiou]' scarlet.txt
+  188  grep -c '^[A]' scarlet.txt
+  189  echo hi
+  190  for i in {2..10}; do     echo "output: $i"; done
+  191  declare -a vowels = ("a" "e")
+  192  declare -a vowels = ["a" "e"]
+  193  declare -a vowels =("a" "e")
+  194  declare -a vowels =("a" "e")
+  195  declare -a vowels=("a" "e")
+  196  vowels
+  197  cat vowels
+  198  echo vowels
+  199  echo vowels[0]
+  200  echo vowels [0]
+  201  echo $vowels[0] 
+  202  echo $vowels
+  203  echo $vowels[1]
+  204  my_array=(one two three)
+  205  for i in ${my_array[@]}; do echo $i; done
+  206  vowels=(a e i)
+  207  for i in ${array[@]}; do echo $i; done
+  208  for i in ${vowels[@]}; do echo $i; done
+  209  echo ${a} ${grep -c [^a] scarlet.txt}
+  210  echo ${a} ${grep -c '[^a]' scarlet.txt}
+  211  grep -c '[^a]' scarlet.txt
+  212  grep -c '[^a]' scarlet.txt
+  213  echo ${a} ${grep -c '^[a]' scarlet.txt}
+  214  grep -c '^[a]' scarlet.txt
+  215  echo ${a} ${b}
+  216  echo a
+  217  echo grep -c '^[a]' scarlet.txt
+  218  echo "${grep -c '^[a]' scarlet.txt}"
+  219  b > grep -c '^[a]' scarlet.txt
+  220  b=grep -c '^[a]' scarlet.txt
+  221  grep -c '^[a]' scarlet.txt > b
+  222  cat b
+  223  output=$(echo ${a}_${b}) 
+  224  output
+  225  cat output
+  226  echo output
+  227  count={grep -c '^[a]' scarlet.txt}
+  228  grep -c '^[a]' scarlet.txt
+  229  count={grep '^[a]' scarlet.txt | wc -l}
+  230  count=(grep -c '^[a]' scarlet.txt)
+  231  echo $count
+  232  echo count
+  233  echo "$count"
+  234  echo "$count" : "$count"
+  235  count='grep -c '^[a]' scarlet.txt'
+  236  echo "$count" : "$count"
+  237  echo $date
+  238  echo "$date"
+  239  echo "Today is $date"
+  240  echo "Today is $now"
+  241  printf "%s\n" "$now"
+  242  alias my_File='ls -f | grep -v /'
+  243  my_File
+  244  alias count='grep -c '^[a]' scarlet.txt'
+  245  echo "$count" : "$count"
+  246  $count
+  247  echo $count
+  248  $count echo $count
+  249  $count
+  250  $count
+  251  echo "$count"
+  252  echo "$todays"
+  253  alias 1='grep -c '^[a]' scarlet.txt'
+  254  $1
+  255  alias c1='grep -c '^[a]' scarlet.txt'
+  256  $c1
+  257  alias c='grep -c '^[a]' scarlet.txt'
+  258  $c
+  259  alias c='grep -c '^[a]' scarlet.txt'
+  260  $c
+  261  alias dot='grep -c '^[a]' scarlet.txt'
+  262  $dot
+  263  alias count='grep -c '^[a]' scarlet.txt'
+  264  $count
+  265  alias pooja='grep -c '^[a]' scarlet.txt'
+  266  $pooja
+  267  alias pooja='grep -c '^[e]' scarlet.txt'
+  268  $pooja
+  269  alias count='grep -c '^[e]' scarlet.txt'
+  270  $count
+  271  grep -c '^[e]' scarlet.txt > 1
+  272  cat 1
+  273  grep -c '^[a]' scarlet.txt > 1
+  274  grep -c '^[i]' scarlet.txt > 1
+  275  grep -c '^[i]' scarlet.txt > 1
+  276  cat 1
+  277  grep -c '^[a]' scarlet.txt > 1
+  278  grep -c '^[e]' scarlet.txt > 2
+  279  grep -c '^[i]' scarlet.txt > 3
+  280  grep -c '^[o]' scarlet.txt > 4
+  281  grep -c '^[u]' scarlet.txt > 5
+  282  grep -c '^[A]' scarlet.txt > 6
+  283  grep -c '^[E]' scarlet.txt > 7
+  284  grep -c '^[I]' scarlet.txt > 8
+  285  grep -c '^[O]' scarlet.txt > 9
+  286  grep -c '^[U]' scarlet.txt > 10
+  287  cat 10
+  288  declare -a array=("one" "two" "three")
+  289  declare -a count=("1" "2" "3")
+  290  $1
+  291  count=(1 2 3)
+  292  for i in ${vowels[@]}; do echo $i; done
+  293  for i in ${count[@]}; do echo $i; done
+  294  count=(cat 1 cat 2 cat 3)
+  295  for i in ${count[@]}; do echo $i; done
+  296  count=$(grep -c '^[U]' scarlet.txt)
+  297  $count
+  298  grep -c '^[U]' scarlet.txt
+  299  check=$?
+  300  $cat 1
+  301  cat 1
+  302  echo "$1"
+  303  a=grep -c '^[U]' scarlet.txt
+  304  a= grep -c '^[U]' scarlet.txt
+  305  echo "$a"
+  306  vowels=(a e i)
+  307  for i in vowels; count= grep -c '^[vowels]' scarlet.txt
+  308  for i in vowels; z= grep -c '^[vowels]' scarlet.txt
+  309  for i in vowels; z = grep -c '^[vowels]' scarlet.txt
+  310  more 1
+  311  ls
+  312  rm 1 10 2 3 4 5 6 7  8 9 b
+  313  ls
+  314  foo=`grep -c '^[U]' scarlet.txt`
+  315  echo $foo
+  316  i =`a`
+  317  i=`a`
+  318  i="a"
+  319  i
+  320  echo $i
+  321  foo=`grep -c '^[i]' scarlet.txt`
+  322  echo $foo
+  323  echo $foo $i
+  324  vowels=(a e i)
+  325  for i in ${my_array[@]}; > do echo $i
+  326  > done
+  327  for i in ${vowels[@]}; foo=`grep -c '^[i]' scarlet.txt`
+  328  for i in ${vowels[@]}; foo=`grep -c '^[i]' scarlet.txt`
+  329  foo=`grep -c '^[i]' scarlet.txt`
+  330  vowels=("a" "e" "i")
+  331  for i in ${vowels[@]}; foo=`grep -c '^[i]' scarlet.txt`
+  332  for i in ${vowels[@]}; echo $i
+  333  for i in ${vowels[@]}; do echo $i; done
+  334  for i in ${vowels[@]}; do foo=`grep -c '^[i]' scarlet.txt`; echo $foo $i; done
+  335  for i in ${vowels[@]}; do echo $i; foo=`grep -c '^[i]' scarlet.txt`; echo $foo $i; done
+  336  foo=`grep -c '^[e]' scarlet.txt`
+  337  echo $foo
+  338  for j in ${vowels[@]}; do echo $j; foo=`grep -c '^[j]' scarlet.txt`; echo $foo $j; done
+  339  for j in 0:2; do echo $j; foo=`grep -c '^[j]' scarlet.txt`; echo $foo $j; don
+  340  for j in 0:2; do echo $j; foo=`grep -c '^[j]' scarlet.txt`; echo $foo $j; done
+  341  for ((i=0; i<=3; ++i)); do echo $i;echo $vowels[i] foo=`grep -c '^[vowels[i]]' scarlet.txt`; echo $foo $i; done
+  342  for ((i=0; i<=3; ++i)); do $vowels[i]; done
+  343  for ((i=0; i<=3; ++i)); do echo $vowels[i]; done
+  344  for ((i=0; i<=3; ++i)); do echo ${vowels[i]}; done
+  345  for ((i=0; i<=3; ++i)); do echo $i;echo ${vowels[i]} foo=`grep -c '^[{vowels[i]}]' scarlet.txt`; echo $foo $i; done
+  346  for ((i=0; i<=3; ++i)); do echo $i;echo ${vowels[i]}; foo=`grep -c '^[{vowels[i]}]' scarlet.txt`; echo $foo $i; done
+  347  for ((i=0; i<=3; ++i)); do echo $i;echo ${vowels[i]}; foo=`grep -c '^[${vowels[i]}]' scarlet.txt`; echo $foo $i; done
+  348  counta=`grep -c '^[e]' scarlet.txt`
+  349  counta=`grep -c '^[a]' scarlet.txt`
+  350  counte=`grep -c '^[e]' scarlet.txt`
+  351  echo $counta
+  352  for i in ${vowels[@]}; do echo $i; echo $counta $i; done
+  353  for i in ${vowels[@]}; do echo $i; echo $foo $i; done
+  354  echo $foo
+  355  vowels= (a e i)
+  356  vowels=(a e i)
+  357  aishali Barua@DESKTOP-LJ2OMT0 MINGW64 ~/files
+  358  $ foo
+  359  foo=`grep -c '^[a]' scarlet.txt`
+  360  echo $foo
+  361  grep -c '^a' scarlet.txt
+  362  grep -c '^$a' scarlet.txt
+  363  grep -c '^vowels[0]' scarlet.txt
+  364  echo $vowels[0]
+  365  echo $vowels
+  366  grep -c '^vowels' scarlet.txt
+  367  grep -c ^vowels scarlet.txt
+  368  grep -c vowels scarlet.txt
+  369  grep -c 'vowels' scarlet.txt
+  370  grep -c 'a' scarlet.txt
+  371  grep -c '^a' scarlet.txt
+  372  grep -c ^a scarlet.txt
+  373  echo ${vowels[2]}
+  374  grep -c ^${vowels[2]} scarlet.txt
+  375  grep -c ^${vowels[1]} scarlet.txt
+  376  for ((i=0; i<=3; ++i)); do echo $i;echo ${vowels[i]}; foo=`grep -c ^${vowels[i]} scarlet.txt`; echo $foo $i; done
+  377  for ((i=0; i<=3; ++i)); do echo $i;echo ${vowels[i]}; foo=`grep -c ^${vowels[i]} scarlet.txt`; echo $foo ${vowels[i]}; done
+  378  for ((i=0; i<=3; ++i)); foo=`grep -c ^${vowels[i]} scarlet.txt`; echo $foo ${vowels[i]}; done
+  379  for ((i=0; i<=3; ++i));do; foo=`grep -c ^${vowels[i]} scarlet.txt`; echo $foo ${vowels[i]}; done
+  380  for ((i=0; i<=3; ++i));do foo=`grep -c ^${vowels[i]} scarlet.txt`; echo $foo ${vowels[i]}; done
+  381  for ((i=0; i<=2; ++i));do foo=`grep -c ^${vowels[i]} scarlet.txt`; echo $foo ${vowels[i]}; done
+  382  vowels=(a e i o u A E I O U)
+  383  for ((i=0; i<=2; ++i));do foo=`grep -c ^${vowels[i]} scarlet.txt`; echo $foo ${vowels[i]}; done
+  384  for ((i=0; i<=9; ++i));do foo=`grep -c ^${vowels[i]} scarlet.txt`; echo $foo ${vowels[i]}; done
+  385  for i in ${vowels[@]};do foo=`grep -c ^$i scarlet.txt`; echo $foo ${vowels[i]}; done
+  386  for i in ${vowels[@]};do foo=`grep -c ^$i scarlet.txt`; echo $foo $i; done
+  387  pwd
+  388  cat > text
+  389  cat > text.txt
+  390  for i in ${vowels[@]};do foo=`grep -c ^$i scarlet.txt`; echo $foo $i >> text.txt; done
+  391  script text.txt
+  392   grep -Eoi '\<c*|\<s*' *.txt | wc -w
+  393   grep -Eoi '\<c*|\<s*' *.txt | wc -w
+  394  grep -Ec 'Article [[:digit:]]' const.txt
+  395   grep -Ec 'Article [[:digit:]]' usdeclar.txt
+  396  grep -Ec 'Article [[:digit:]]' scarlet.txt
+  397  grep -cx '\s*' const.txt
+  398  169
+  399  grep -c '^[aeiou]' scarlet.txt
+  400  vowels=(a e i o u A E I O U)
+  401   for i in ${vowels[@]};do foo=`grep -c ^$i scarlet.txt`; echo    $i      $foo ; done
+  402   for i in ${vowels[@]};do foo=`grep -c ^$i scarlet.txt`; echo $i  $foo ; done
+  403  history > cmds
